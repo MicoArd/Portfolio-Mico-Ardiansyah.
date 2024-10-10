@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mico Ardiansyah Portfolio</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Billboard Section */
+        #billboard {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: #fff;
+        }
+
+        #billboard h1 {
+            font-size: 4rem;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        #enter-button {
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #enter-button:hover {
+            background-color: #ddd;
+        }
+
+        /* Main Content (after entering) */
+        #main-content {
+            display: none;
+            text-align: center;
+            padding: 50px;
+        }
+
+        #main-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            background-color: #eee;
+            padding: 20px;
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #ccc;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Billboard Section -->
+    <div id="billboard">
+        <div>
+            <h1>Mico Ardiansyah Portfolio</h1>
+            <button id="enter-button" onclick="enterSite()">Enter</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <h2>Welcome to Mico's Portfolio</h2>
+        <div class="menu">
+            <div class="menu-item"><a href="profil.html">Profil</a></div>
+            <div class="menu-item"><a href="branding.html">Branding UMKM</a></div>
+            <div class="menu-item"><a href="uk-external.html">UK External</a></div>
+            <div class="menu-item"><a href="design-education.html">Design Education</a></div>
+        </div>
+    </div>
+
+    <script>
+        function enterSite() {
+            document.getElementById('billboard').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
